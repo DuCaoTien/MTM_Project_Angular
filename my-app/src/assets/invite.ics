@@ -1,0 +1,69 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Saigon
+X-LIC-LOCATION:Asia/Saigon
+BEGIN:STANDARD
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:+07
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Saigon:20171208T160000
+DTEND;TZID=Asia/Saigon:20171208T173000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+DTSTAMP:20180424T045640Z
+ORGANIZER;CN=thuan.phan@saigontechnology.com:mailto:thuan.phan@saigontechno
+ logy.com
+UID:758lqukm4rch9vbdmg1a9uneag@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=duy.tran@saigontechnology.com;X-NUM-GUESTS=0:mailto:duy.tran@saigon
+ technology.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=vu.truong@saigontechnology.com;X-NUM-GUESTS=0:mailto:vu.truong@saig
+ ontechnology.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=tien.du@saigontechnology.com;X-NUM-GUESTS=0:mailto:tien.du@saigonte
+ chnology.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=hiep.tran@saigontechnology.com;X-NUM-GUESTS=0:mailto:hiep.tran@saig
+ ontechnology.vn
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=thanh.dinh@saigontechnology.com;X-NUM-GUESTS=0:mailto:thanh.dinh@sa
+ igontechnology.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=thuan.phan@saigontechnology.com;X-NUM-GUESTS=0:mailto:thuan.phan@saigon
+ technology.com
+ATTENDEE;CUTYPE=RESOURCE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TR
+ UE;CN=X-Building-2-302 Found (100);X-NUM-GUESTS=0:mailto:saigontechnology.c
+ om_3135353733383138363435@resource.calendar.google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=vu.le@saigontechnology.com;X-NUM-GUESTS=0:mailto:vu.le@saigontechno
+ logy.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=phuoc.nguyen@saigontechnology.com;X-NUM-GUESTS=0:mailto:phuoc.nguye
+ n@saigontechnology.com
+CREATED:20171201T052131Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nPlease do not edit this section of the descriptio
+ n.\n\nThis event has a Google Hangouts video call.\nJoin: https://plus.goog
+ le.com/hangouts/_/saigontechnology.com/coin2go-review?hceid=dGh1YW4ucGhhbkB
+ zYWlnb250ZWNobm9sb2d5LmNvbQ.758lqukm4rch9vbdmg1a9uneag&hs=121\n\nView your 
+ event at https://www.google.com/calendar/event?action=VIEW&eid=NzU4bHF1a200
+ cmNoOXZiZG1nMWE5dW5lYWcgdGllbi5kdUBzYWlnb250ZWNobm9sb2d5LmNvbQ&tok=MzEjdGh1
+ YW4ucGhhbkBzYWlnb250ZWNobm9sb2d5LmNvbTRiMWJmMmZjNjNjOTgwYjlmOWUwOTBkYjI3ODA
+ 1MWFkMDc3N2RhM2Y&ctz=Asia%2FSaigon&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20180424T045639Z
+LOCATION:X-Building-2-302 Found (100)
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:[MTM] Review meeting
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,207 @@
+/*used for inbox compose, reply forms*/
+.inbox-editor {
+  padding: 10px;
+  margin: 0 !important;
+}
+
+/*used for inbox reply form, for the message blockquote on reply*/
+blockquote {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border-left: 1px solid #666 !important;
+  padding-left: 5px;
+  display: block;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="silver"] {
+  background: silver !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="gray"] {
+  background: gray !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="maroon"] {
+  background: maroon !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="red"] {
+  background: red !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="purple"] {
+  background: purple !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="green"] {
+  background: green !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="olive"] {
+  background: olive !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="navy"] {
+  background: navy !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="blue"] {
+  background: blue !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="orange"] {
+  background: orange !important;
+}
+
+.wysihtml5-toolbar [data-wysihtml5-command-value="black"] {
+  background: black !important;
+}
+
+.dropdown-menu > li > a.wysihtml5-colors-title {
+    color: #000;
+}
+
+.dropdown-menu > li:first-child a.wysihtml5-colors-title {
+    color: #fff;
+}
+
+.dropdown-menu > li > a.wysihtml5-colors-title:hover, .dropdown-menu > li > a.wysihtml5-colors-title:focus {
+    color: #fff;
+}
+
+.dropdown-menu > li:first-child a.wysihtml5-colors-title:hover {
+    color: #ccc !important;
+}
+
+.wysiwyg-font-size-smaller {
+  font-size: smaller;
+}
+
+.wysiwyg-font-size-larger {
+  font-size: larger;
+}
+
+.wysiwyg-font-size-xx-large {
+  font-size: xx-large;
+}
+
+.wysiwyg-font-size-x-large {
+  font-size: x-large;
+}
+
+.wysiwyg-font-size-large {
+  font-size: large;
+}
+
+.wysiwyg-font-size-medium {
+  font-size: medium;
+}
+
+.wysiwyg-font-size-small {
+  font-size: small;
+}
+
+.wysiwyg-font-size-x-small {
+  font-size: x-small;
+}
+
+.wysiwyg-font-size-xx-small {
+  font-size: xx-small;
+}
+
+.wysiwyg-color-black {
+  color: black;
+}
+
+.wysiwyg-color-silver {
+  color: silver;
+}
+
+.wysiwyg-color-gray {
+  color: gray;
+}
+
+.wysiwyg-color-white {
+  color: white;
+}
+
+.wysiwyg-color-maroon {
+  color: maroon;
+}
+
+.wysiwyg-color-red {
+  color: red;
+}
+
+.wysiwyg-color-purple {
+  color: purple;
+}
+
+.wysiwyg-color-fuchsia {
+  color: fuchsia;
+}
+
+.wysiwyg-color-green {
+  color: green;
+}
+
+.wysiwyg-color-lime {
+  color: lime;
+}
+
+.wysiwyg-color-olive {
+  color: olive;
+}
+
+.wysiwyg-color-yellow {
+  color: yellow;
+}
+
+.wysiwyg-color-navy {
+  color: navy;
+}
+
+.wysiwyg-color-blue {
+  color: blue;
+}
+
+.wysiwyg-color-teal {
+  color: teal;
+}
+
+.wysiwyg-color-aqua {
+  color: aqua;
+}
+
+.wysiwyg-text-align-right {
+  text-align: right;
+}
+
+.wysiwyg-text-align-center {
+  text-align: center;
+}
+
+.wysiwyg-text-align-left {
+  text-align: left;
+}
+
+.wysiwyg-float-left {
+  float: left;
+  margin: 0 8px 8px 0;
+}
+
+.wysiwyg-float-right {
+  float: right;
+  margin: 0 0 8px 8px;
+}
+
+.wysiwyg-clear-right {
+  clear: right;
+}
+
+.wysiwyg-clear-left {
+  clear: left;
+}

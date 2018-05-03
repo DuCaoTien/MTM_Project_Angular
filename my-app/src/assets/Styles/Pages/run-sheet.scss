@@ -1,0 +1,242 @@
+﻿.run-sheet-main {
+    width: 100%;
+    z-index: 1;
+
+    @media screen and (max-width: 1500px) {
+        font-size: 10px !important;
+
+        table tr {
+            td, th {
+                font-size: 10px !important;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1500px) {
+        font-size: 12px !important;
+
+        table tr {
+            td, th {
+                font-size: 12px !important;
+            }
+        }
+    }
+
+    .rs-header {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 18px;
+
+        .rs-time-left, .rs-time-right {
+            font-weight: bold;
+        }
+
+        .rs-time-left {
+            margin-right: 10px;
+        }
+
+        .rs-time-right {
+            margin-left: 10px;
+        }
+    }
+
+    .rs-content {
+        height: 100%;
+
+        .rs-left-panel {
+            @media screen and (max-width: 1500px) {
+                width: 238px;
+            }
+
+            @media screen and (min-width: 1500px) {
+                width: 208px;
+            }
+
+            float: left;
+            margin-right: 15px;
+            position: fixed;
+
+            &.fixed-top {
+                position: fixed;
+                top: 0;
+            }
+
+            .rs-calendar-panel {
+                margin-bottom: 15px;
+
+                .fc-row.fc-week.fc-widget-content, .fc-basic-view .fc-body .fc-row {
+                    height: 30px !important;
+                    min-height: 30px !important;
+                }
+            }
+
+            .rs-select-box-panel {
+                border: 1px solid #000000;
+                overflow: auto;
+
+                .rs-select-box-group {
+                    .g-header {
+                        background-color: #3598dc;
+                        color: white;
+                        height: 25px;
+                        vertical-align: middle;
+                        line-height: 25px;
+                        border-bottom: 1px solid white;
+
+                        &:after {
+                            float: right;
+                            margin-right: 10px;
+                            font: normal normal normal 20px/1 FontAwesome;
+                            vertical-align: middle;
+                            line-height: 25px;
+                        }
+
+                        &.down:after {
+                            content: "\f0d7";
+                        }
+
+                        &.right:after {
+                            content: "\f0da";
+                        }
+
+                        span {
+                            margin-left: 20px;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .g-content {
+                        .txtSearchItem {
+                            width: 100%;
+                        }
+
+                        label {
+                            margin-left: 10px;
+                        }
+
+                        .show-info {
+                            border-top: 1px solid grey;
+                            background-color: #eedcdc;
+
+                            .current-size {
+                                margin-left: 15%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .rs-right-panel {
+            @media screen and (max-width: 1500px) {
+                margin-left: 250px;
+            }
+
+            @media screen and (min-width: 1500px) {
+                margin-left: 220px;
+            }
+            
+            table#clone {
+                position: fixed;
+                background-color: white;
+                top: 60px;
+                border: 1px solid #e7ecf1;
+
+                thead {
+                    background-color: white;
+                    border-bottom: 3px solid black !important;
+                    visibility: visible;
+                    pointer-events: auto;
+                }
+            }
+
+            table {
+                .action {
+                    min-width: 50px !important;
+                }
+
+                .team-leader {
+                    ul li {
+                        list-style: none;
+                        margin-left: -40px;
+                    }
+                }
+                
+                .shift-status-action{
+                    margin-top: 5px;
+                }
+
+                .team-member, .vehicle, .team-leader {
+                    @media screen and (max-width: 1500px) {
+                        min-width: 150px !important;
+                    }
+
+                    @media screen and (min-width: 1500px) {
+                        min-width: 120px !important;
+                    }
+                }
+
+                &.ui-droppable-hover {
+                    tbody {
+                        tr:not(.ui-droppable-hover) {
+                            opacity: 0.2;
+                        }
+
+                        tr.ui-droppable-hover {
+                            border: 2px solid #3598dc;
+
+                            td:not(.ui-droppable-hover) {
+                                opacity: 0.8;
+                            }
+
+                            td.ui-droppable-hover {
+                                opacity: 1;
+                                background-color: #3598dc;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+
+                ul li {
+                    list-style: decimal;
+                    margin-left: -25px;
+                    height: 19px;
+
+                    i.fa-trash {
+                        float: right;
+                        cursor: pointer;
+                        vertical-align: middle;
+                        line-height: 19px;
+                    }
+                }
+            }
+
+            .btn-add-member, .btn-add-leader {
+                position: relative;
+                right: -5px;
+                float: right;
+            }
+        }
+    }
+
+    .rs-footer {
+        clear: both;
+    }
+
+    .shift-status {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &.scheduled {
+            background-color: #00ff21;
+        }
+
+        &.new {
+            background-color: yellow;
+        }
+    }
+}

@@ -1,0 +1,413 @@
+﻿.btn-change-background {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: -34px;
+    border-radius: 50px 0px 0px 0px !important;
+    padding-left: 20px;
+    border: 1px inset;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+
+#grid-stack-container {
+    position: relative
+}
+
+.btn-change-background:hover {
+    background: #3598dc;
+    color: #fff;
+}
+
+body > .grid-stack-item.ui-draggable {
+    display: none;
+}
+
+.delete-page {
+    position: absolute !important;
+    bottom: 70%;
+    right: -9px;
+    z-index: 10;
+    font-size: 12px;
+    padding: 0px 4px !important;
+    background: red !important;
+    color: #fff !important; 
+    border-color: #ccc !important; 
+    font-weight: bold;
+    cursor: pointer !important;
+}
+
+.pagination > li {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.pagination > li > a{
+    padding-right: 0;
+    padding-left: 0;
+    min-width: 35px;
+    text-align: center;
+}
+
+.new-page a {
+    color: #337ab7;
+    font-weight: bold;
+    border-color: #337ab7 !important;
+    margin-left: 4px !important;
+}
+
+.new-page {
+    border-color: #337ab7;
+}
+
+.grid-stack .grid-stack-item-content {
+    border: 1px dashed #ccc;
+}
+
+.grid-stack .grid-stack-item-removing {
+    opacity: 0.5;
+}
+
+.grid-stack {
+    border: 1px solid #ccc;
+    border-width: 1px;
+    height: 1263px !important;
+    width: 893px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-stack-nav {
+    width: 893px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landscape .grid-stack {
+    height: 893px !important;
+    width: 1263px;
+}
+
+.landscape .grid-stack-nav {
+    width: 1263px;
+}
+
+.grid-stack-item-delete {
+    display: none;
+    position: absolute;
+    top: -18px;
+    right: -20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #a52a2a;
+}
+
+.grid-stack-item-clone {
+    display: none;
+    position: absolute;
+    top: -16px;
+    left: -20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #00008b;
+    font-size: 11px;
+}
+
+.grid-stack > .grid-stack-item > .grid-stack-item-content {
+    overflow: hidden !important;
+}
+
+.grid-stack .grid-line {
+    border: 1px solid #ccc;
+    border-width: 0 1px 1px 0;
+    float: left;
+}
+
+.widget-list .grid-stack-item {
+    width: 100%;
+    height: 30px;
+    line-height: 27px;
+    border: 1px solid;
+    z-index: 10;
+    margin: 10px 5px;
+    min-width: auto !important;
+    max-width: none !important;
+    left: 0px !important;
+}
+
+    .widget-list .grid-stack-item .toolbar {
+        text-indent: 5px;
+        cursor: move;
+        width: 117px;
+        font-size: 11px;
+        text-overflow: ellipsis;
+    }
+
+    .widget-list .grid-stack-item .preview {
+        display: none;
+    }
+
+.widget-list .grid-stack-item-delete,  .widget-list .grid-stack-item-clone{
+    display: none;
+}
+
+.grid-stack-item-content .preview{
+    background: white;
+    color: black;
+}
+
+.grid-stack-item-content p {
+    margin: 0 0 10px !important;
+}
+
+.grid-stack-item-content hr {
+    border-color: black;
+}
+
+#editTextModal .modal-body .btn {
+    padding: 5px;
+    background-color: transparent;
+}
+
+.grid-stack .toolbar > .fa {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    color: red;
+    font-size: 17px;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.grid-stack .grid-stack-item:hover .grid-stack-item-delete, .grid-stack .grid-stack-item:hover .grid-stack-item-clone {
+    display: block;
+}
+
+.grid-stack .grid-stack-item .preview.preview-text {
+    background: transparent;
+}
+
+.grid-stack .grid-stack-item .preview-h-line {
+    border-bottom: 1px solid #000;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    background: transparent;
+}
+
+.grid-stack .grid-stack-item .preview-v-line {
+    border-right: 1px solid #000;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    background: transparent;
+}
+
+.grid-stack .grid-stack-item .preview-image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+    .grid-stack .grid-stack-item .preview-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+.grid-stack .grid-stack-item .toolbar span {
+    display: none !important;
+}
+
+.grid-stack .grid-stack-item .preview-pre-define {
+    color: red;
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    z-index: 10054;
+}
+
+.ui-datepicker-inline {
+    display: none !important;
+}
+
+.portlet > .portlet-title {
+    border-bottom: none;
+}
+
+.form-widget {
+    position: relative;
+}
+
+.position-fixed {
+    position: fixed !important;
+}
+
+.landscape .form-widget .grid-stack-item {
+    width: 140px !important;
+    left: 0px !important;
+    right: 0px !important;
+    max-width: 140px !important;
+    min-width: 140px !important;
+    display: block;
+    float: left;
+}
+
+.form-designer-pagination {
+    /*position: absolute;*/
+    float: right;
+    right: 15px;
+    top: 0px;
+    margin: 0px;
+}
+
+.grid-stack-item .ui-resizable-se {
+    right: -20px !important;
+}
+
+.grid-stack-item .ui-resizable-sw {
+    left: -20px !important;
+}
+
+.grid-stack-item.v-line .ui-resizable-se {
+    left: 20px !important;
+}
+
+.grid-stack-item.h-line .ui-resizable-se {
+    right: -20px !important;
+}
+
+.grid-stack-item.v-line .ui-resizable-sw, .grid-stack-item.h-line .ui-resizable-sw {
+    left: -20px !important;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 9999;
+}
+
+.no-padding-top {
+    padding-top: 0px !important;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.sticky .portlet-body {
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+.sticky .portlet.light {
+    border-top: 1px solid #ccc;
+    box-shadow: 1px 1px 5px #696969
+}
+
+.landscape #leftToolbox {
+    right: 0px;
+    width: auto;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.landscape .widget-list .grid-stack-item {
+    margin: 1px;
+}
+
+.landscape #leftToolbox .portlet.light {
+    padding-bottom: 20px !important;
+}
+
+.landscape #orientation {
+    min-width: 1316px !important;
+}
+
+.portrait #orientation {
+    min-width: 940.125px !important;
+    max-width: 970.125px !important;
+}
+
+@media (min-width: 992px)
+{
+    .portrait #leftToolbox .portlet.light, .portrait #rightToolbox .portlet.light, .portrait #rightToolbox{
+        width: 160px !important;
+    }
+
+    .portrait #leftToolbox {
+        width: 184px !important;
+    }
+
+    .portrait #orientation {
+        padding: 0px;
+    }
+
+    .portrait #leftToolbox .widget-list, .portrait #rightToolbox .widget-list{
+        width: 120px !important;
+    }
+
+    .portrait #leftToolbox h4, .portrait #rightToolbox h4{
+        width: 200px;
+    }
+
+    .portrait #leftToolbox .widget-list .grid-stack-item, .portrait #rightToolbox .widget-list .grid-stack-item {
+        min-width: 120px !important;
+        max-width: 120px !important;
+        width: 120px !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .modal-editor .modal-dialog {
+        width: 1000px;
+        margin: 30px auto;
+    }
+}
+
+.mce-tinymce {
+    width: auto !important;
+}
+
+.preview .grid-stack .grid-stack-item-content {
+    border: none;
+}
+
+.preview .grid-stack .grid-stack-item-content textarea, .preview .grid-stack .grid-stack-item-content select, .preview .grid-stack .grid-stack-item-content .textbox, .preview .grid-stack .grid-stack-item-content .time-picker, .preview .grid-stack .grid-stack-item-content .date-picker, .preview .grid-stack .grid-stack-item-content .signature {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 1.2px solid #676767;
+}
+
+.preview .grid-stack .grid-stack-item-content textarea:hover, .preview .grid-stack .grid-stack-item-content select:hover, .preview .grid-stack .grid-stack-item-content .textbox:hover, .preview .grid-stack .grid-stack-item-content .time-picker:hover, .preview .grid-stack .grid-stack-item-content .date-picker:hover, .preview .grid-stack .grid-stack-item-content .signature:hover {
+    border-color: #00cd99;
+}
+
+.datepicker-inline {
+    display: none !important;
+}
+
+#signature {
+    overflow: hidden;
+}
+
+.fullsize {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.form-designer-container {
+    display: table;
+    margin: auto;
+}

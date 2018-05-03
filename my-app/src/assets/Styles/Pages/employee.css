@@ -1,0 +1,7 @@
+﻿.dataTables_filter select.datatable-filter{
+    width: 110px !important;
+}
+.dataTables_filter input.datatable-filter{
+    width: 135px !important;
+    margin-right: .5em;
+}

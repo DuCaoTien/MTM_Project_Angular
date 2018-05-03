@@ -1,0 +1,168 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+ .ng-left-panel{
+    width: 15%;
+    float: left;
+    position: fixed;
+    background: white;
+    z-index: 100;
+}
+
+.ng-calendar-panel{
+    margin-bottom: 15px;
+}
+
+.ng-calendar-header{
+    background: #3598dc;
+    padding: 9px 0;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.ng-select-box-panel{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 237px;
+    height: 530px;
+    background: #fff;
+}
+.ng-select-box-group{
+    margin-bottom: 15px;
+}
+
+.ng-list-cards {
+    padding: 12px 20px 15px 20px;
+}
+
+.ng-header{
+    background-color: #3598dc;
+    color: white;
+    padding: 5px 0;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 25px;
+    border-bottom: 1px solid white;
+}
+.ng-content{
+    border: 1px solid #c2cad8;
+}
+.txtSearchItem {
+    height: 30px !important;
+    min-height: 20px !important;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.ng-search{
+    margin: 5px 2%;
+    width: 96%;
+}
+.control-label{
+    font-size: 13px;
+    color: #888888;
+    margin-left: 10px;
+}
+span{
+    margin-left: 10px;
+}
+ul {
+    list-style-type: none;
+}
+
+/* .ng_sm_1{
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 9%;
+}
+.ng_sm_1_1{
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 7%;
+}
+.ng_sm_1_2{
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 6%;
+} */
+.ng-header {
+    background-color: #3598dc;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 5px 10px;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 25px;
+    border-bottom: 1px solid white;   
+}
+.ng-btn-calendar {
+    position: relative;
+}
+
+.ng-btn-calendar:hover .ng-header-calendar {
+    transform: scaleY(1);
+    position: unset;
+}
+
+.ng-header:focus {
+    box-shadow: unset;
+    border-color: transparent;
+}
+
+.ng-header-calendar {
+    /* display: none; */
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease-out;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.ng-header-icon {
+    float: right;
+    line-height: 20px;
+    transition: transform 0.5s;
+}
+.ng-header-icon::before {
+    font-size: 20px;
+}
+.ng-header[aria-expanded=true] .ng-header-icon {
+    transform: rotate(90deg);
+}
+
+/* Card  item*/
+.ng-card-item {
+    border: transparent;
+}
+.ng-card-item .card-header {
+ background-color: #fff;
+ border-bottom: transparent;
+ padding: 0;
+ margin-bottom: 15px;
+}
+
+/* Card body */
+.ng-card-body {
+    border: 1px solid #c2cad8;
+    /* margin-top: -15px; */
+    padding: 0;
+}
+/* List items */
+.ng-items {
+    padding: 0;
+}
+
+.ng-item {
+    padding: 5px;
+    border-top: 1px solid #e2e2e2;
+    margin: 0;
+    background: #fbfafa;
+    color: #888888;
+}
+.ng-item:last-child {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+

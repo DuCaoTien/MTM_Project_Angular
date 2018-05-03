@@ -1,0 +1,38 @@
+/* here you can put your own css to customize and override the theme */
+.page-header.navbar .top-menu .navbar-nav > li.header-item {
+    cursor: pointer;
+    padding: 24px 12px 24px 12px;
+}
+
+    .page-header.navbar .top-menu .navbar-nav > li.header-item > i {
+        top: 3px;
+        color: #c0cddc;
+        font-size: 19px;
+    }
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+::-moz-selection {
+    background: #ad655f;
+    background: rgba(173, 101, 95, 0.7);
+    color: #ffffff;
+    -ms-text-shadow: none;
+    text-shadow: none;
+}
+
+::selection {
+    background: #ad655f;
+    background: rgba(173, 101, 95, 0.7);
+    color: #ffffff;
+    -ms-text-shadow: none;
+    text-shadow: none;
+}
+
+.dataTables_wrapper .dataTables_processing {
+    z-index: 999;
+    color: #fdfdfd;
+    border: 1px solid #3598dc;
+    background: #3598dc;
+}

@@ -1,0 +1,611 @@
+﻿table.fixed-table {
+    table-layout: fixed;
+}
+
+    table.fixed-table td {
+        overflow: hidden;
+    }
+
+.run-sheet-main {
+    width: 100%;
+    z-index: 1;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 5px;
+}
+
+table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.dataTables_info {
+    display: none;
+}
+
+@media screen and (max-width: 1500px) {
+    .run-sheet-main {
+        font-size: 10px !important;
+    }
+
+        .run-sheet-main table tr td, .run-sheet-main table tr th {
+            font-size: 10px !important;
+        }
+}
+
+@media screen and (min-width: 1500px) {
+    .run-sheet-main {
+        font-size: 12px !important;
+    }
+
+        .run-sheet-main table tr td, .run-sheet-main table tr th {
+            font-size: 12px !important;
+        }
+
+        .run-sheet-main .rs-content .rs-right-panel table .status button span,
+        .run-sheet-main .rs-content .rs-right-panel table .status .dropdown-menu li a {
+            font-size: 12px;
+        }
+
+        .run-sheet-main .rs-left-panel .control-label,
+        .run-sheet-main .rs-left-panel input {
+            font-size: 12px !important;
+        }
+}
+
+@media only screen and (min-width: 1345px) {
+    .rs-right-panel {
+        width: 83% !important;
+    }
+}
+
+@media only screen and (max-width: 1345px) {
+    .rs-right-panel {
+        width: 75% !important;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .rs-right-panel {
+        width: 68% !important;
+    }
+}
+
+.run-sheet-main .rs-header {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    margin-left: 15%;
+}
+
+    .run-sheet-main .rs-header .rs-time-left, .run-sheet-main .rs-header .rs-time-right {
+        font-weight: bold;
+    }
+
+    .run-sheet-main .rs-header .rs-time-left {
+        margin-right: 10px;
+    }
+
+    .run-sheet-main .rs-header .rs-time-right {
+        margin-left: 10px;
+    }
+
+.run-sheet-main .rs-content {
+    height: 100%;
+}
+
+    .run-sheet-main .rs-content .rs-left-panel {
+        float: left;
+        position: fixed;
+        background: white;
+    }
+
+@media screen and (max-width: 1500px) {
+    .run-sheet-main .rs-content .rs-left-panel {
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .run-sheet-main .rs-content .rs-left-panel {
+        width: 220px;
+    }
+}
+
+.run-sheet-main .rs-content .rs-left-panel.fixed-top {
+    position: fixed;
+    top: 0;
+}
+
+.run-sheet-main .rs-content .rs-left-panel .rs-calendar-panel {
+    margin-bottom: 15px;
+}
+
+    .run-sheet-main .rs-content .rs-left-panel .rs-calendar-panel .rs-datepicker-header {
+        background: #3598dc;
+        padding: 9px 0;
+        cursor: pointer;
+        padding-left: 10px;
+    }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-calendar-panel .rs-datepicker-header a {
+            color: white;
+        }
+
+            .run-sheet-main .rs-content .rs-left-panel .rs-calendar-panel .rs-datepicker-header a:hover {
+                text-decoration: none;
+            }
+
+    .run-sheet-main .rs-content .rs-left-panel .rs-calendar-panel .rs-date-picker {
+        border: 1px solid #c2cad8;
+    }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-calendar-panel .rs-date-picker .datepicker {
+            width: 100% !important;
+        }
+
+            .run-sheet-main .rs-content .rs-left-panel .rs-calendar-panel .rs-date-picker .datepicker .table-condensed {
+                width: 100% !important;
+            }
+
+    .run-sheet-main .rs-content .rs-left-panel .rs-calendar-panel .fc-row.fc-week.fc-widget-content, .run-sheet-main .rs-content .rs-left-panel .rs-calendar-panel .fc-basic-view .fc-body .fc-row {
+        height: 30px !important;
+        min-height: 30px !important;
+    }
+
+.run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 203px;
+    height: 530px;
+    background: #fff;
+}
+
+@media screen and (min-width: 1500px) {
+    .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel {
+        overflow-x: hidden;
+        width: 237px;
+        height: 530px;
+        background: #fff;
+    }
+}
+
+.run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group {
+    margin-bottom: 15px;
+}
+
+    .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-header {
+        background-color: #3598dc;
+        color: white;
+        padding: 5px 0;
+        height: 35px;
+        vertical-align: middle;
+        line-height: 25px;
+        border-bottom: 1px solid white;
+    }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-header:after {
+            float: right;
+            margin-right: 10px;
+            font: normal normal normal 20px/1 FontAwesome;
+            vertical-align: middle;
+            line-height: 25px;
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-header.down:after {
+            content: "\f0d7";
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-header.right:after {
+            content: "\f0da";
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-header span {
+            margin-left: 10px;
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-header:hover {
+            cursor: pointer;
+        }
+
+    .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-search {
+        margin: 5px 2%;
+        width: 96%;
+    }
+
+    .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-content {
+        border: 1px solid #c2cad8;
+    }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-content .txtSearchItem {
+            height: 30px !important;
+            min-height: 20px !important;
+            width: 100%;
+            padding-left: 5px;
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-content label {
+            margin: 0 0 0 5px;
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-content .g-item {
+            padding: 5px 0;
+            border-top: 1px solid #c2cad8;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-content .assigned-item {
+            font-weight: bold;
+            padding-right: 12px;
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-content i {
+            position: absolute;
+            top: 7px;
+            right: 2px;
+            color: #3598dc;
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-content .g-item label {
+            cursor: pointer;
+        }
+
+        .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-content .show-info {
+            border-top: 1px solid grey;
+            background-color: #eedcdc;
+        }
+
+            .run-sheet-main .rs-content .rs-left-panel .rs-select-box-panel .rs-select-box-group .g-content .show-info .current-size {
+                margin-left: 15%;
+            }
+
+@media screen and (max-width: 1500px) {
+    .run-sheet-main .rs-content .rs-right-panel {
+        float: left;
+        margin-left: 230px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .run-sheet-main .rs-content .rs-right-panel {
+        margin-left: 230px;
+    }
+}
+
+.run-sheet-main .rs-content .rs-right-panel table#clone {
+    position: fixed;
+    background-color: white;
+    top: 60px;
+    border: 1px solid #e7ecf1;
+    z-index: 9;
+}
+
+.page-portlet-fullscreen .run-sheet-main .rs-content .rs-right-panel table#clone {
+    top: 83px;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table#clone thead {
+    background-color: white;
+    border-bottom: 3px solid black !important;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table .action .wrapper {
+    width: 24px;
+    margin: auto;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table .action div button,
+.run-sheet-main .rs-content .rs-right-panel table .action div a {
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-right: 0;
+    width: 100%;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table .team-leader ul li {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table .shift-status-action {
+    margin-top: 5px;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table .status ul {
+    min-width: 50px !important;
+    -webkit-box-shadow: 0 0 0 white;
+    -moz-box-shadow: 0 0 0 white;
+    box-shadow: 0 0 0 white;
+}
+
+
+.run-sheet-main .rs-content .rs-right-panel .table-scrollable {
+    overflow: visible;
+}
+
+
+.run-sheet-main .rs-content .rs-right-panel table .status button,
+.run-sheet-main .rs-content .rs-right-panel table .status li a {
+    color: black;
+    padding: 2px;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table.ui-droppable-hover tbody tr:not(.ui-droppable-hover) {
+    opacity: 0.2;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table.ui-droppable-hover tbody tr.ui-droppable-hover {
+    border: 2px solid #3598dc;
+}
+
+    .run-sheet-main .rs-content .rs-right-panel table.ui-droppable-hover tbody tr.ui-droppable-hover td:not(.ui-droppable-hover) {
+        opacity: 0.8;
+    }
+
+    .run-sheet-main .rs-content .rs-right-panel table.ui-droppable-hover tbody tr.ui-droppable-hover td.ui-droppable-hover {
+        opacity: 1;
+        background-color: #3598dc;
+    }
+
+.run-sheet-main .rs-content .rs-right-panel table ul.g-items li {
+    list-style: decimal;
+    margin-left: -25px;
+    padding: 5px 2px;
+    border: 1px solid #e2e2e2;
+    margin: 4px 0px 0 -25px;
+    background: #fbfafa;
+}
+
+    .run-sheet-main .rs-content .rs-right-panel table ul.g-items li:hover {
+        border: 1px solid #3598dc !important;
+        background: #fff;
+    }
+
+.run-sheet-main .rs-content .rs-right-panel table ul li i.fa-trash {
+    float: right;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 19px;
+}
+
+.run-sheet-main .rs-content .rs-right-panel .btn-add-member, .run-sheet-main .rs-content .rs-right-panel .btn-add-leader {
+    position: relative;
+    right: -5px;
+    float: right;
+}
+
+.run-sheet-main .rs-footer {
+    clear: both;
+}
+
+.run-sheet-main .shift-status {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    .run-sheet-main .shift-status.scheduled {
+        background-color: #00ff21;
+    }
+
+    .run-sheet-main .shift-status.new {
+        background-color: yellow;
+    }
+
+ul.g-items .removeable {
+    position: relative;
+}
+
+    ul.g-items .removeable i {
+        position: absolute;
+        right: -2px;
+        top: -4px;
+    }
+
+.overlap-item {
+    font-weight: bold;
+}
+
+.worklog-confirmed {
+    color: green !important;
+}
+
+.worklog-declined {
+    color: red !important;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table .status .dropdown-menu {
+    border: 2px solid #e7ecf1 !important;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table .status button:not(.bg-shift-confirmed) {
+    color: white;
+}
+
+tr.ui-viewable .fa-trash {
+    cursor: not-allowed !important;
+}
+
+.run-sheet-main .rs-content .rs-left-panel {
+    width: 15%;
+}
+
+.run-sheet-main .rs-content .rs-right-panel {
+    width: 83%;
+    float: right;
+}
+
+@media screen and (max-width: 1500px) {
+    .run-sheet-main .rs-left-panel .control-label,
+    .run-sheet-main .rs-left-panel input {
+        font-size: 10px !important;
+    }
+}
+
+.run-sheet-main .rs-content .rs-right-panel table th {
+    background: #3598dc !important;
+    color: white;
+    vertical-align: middle;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table:not(#clone) .action {
+    width: 28px !important;
+    max-width: 35px !important;
+    padding: 2px 0 2px 2px !important;
+    vertical-align: middle;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table:not(#clone) .shift-number {
+    width: 50px !important;
+    max-width: 50px !important;
+    padding: 2px 0 2px 2px !important;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table:not(#clone) .time-range {
+    width: 30px !important;
+    max-width: 30px !important;
+    padding: 2px 0 2px 2px !important;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table:not(#clone) .client {
+    width: 80px !important;
+    max-width: 80px !important;
+    padding: 2px 0 2px 2px !important;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table:not(#clone) .location {
+    width: 80px !important;
+    max-width: 80px !important;
+    padding: 2px 0 2px 2px !important;
+}
+
+
+.run-sheet-main .rs-content .rs-right-panel table:not(#clone) .status {
+    width: 85px !important;
+    max-width: 85px !important;
+    padding: 4px !important;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table .assigned-assets,
+.run-sheet-main .rs-content .rs-right-panel table .team-leader,
+.run-sheet-main .rs-content .rs-right-panel table .team-member,
+.run-sheet-main .rs-content .rs-right-panel table .contractor {
+    padding: 2px 8px 2px 12px !important;
+}
+
+
+.run-sheet-main .rs-content .rs-right-panel table .status button {
+    width: 100% !important;
+}
+
+.run-sheet-main .rs-content .rs-right-panel table .status .dropdown-menu {
+    width: 100% !important;
+}
+
+    .run-sheet-main .rs-content .rs-right-panel table .status .dropdown-menu li a {
+        text-align: center;
+    }
+
+        .run-sheet-main .rs-content .rs-right-panel table .status .dropdown-menu li a:not(.bg-shift-confirmed) {
+            color: white;
+        }
+
+    .run-sheet-main .rs-content .rs-right-panel table .status button span,
+    .run-sheet-main .rs-content .rs-right-panel table .status .dropdown-menu li a {
+        font-size: 10px;
+    }
+
+.run-sheet-main .rs-content .rs-right-panel table .status .input-group-btn {
+    text-align: center;
+}
+
+    .run-sheet-main .rs-content .rs-right-panel table .status .input-group-btn .dropdown-toggle {
+        font-size: 10px !important;
+    }
+
+.assigned-item .assigned-item-text {
+    width: 90%;
+}
+
+.tooltip {
+    z-index: 9999;
+}
+
+.ui-draggable-dragging {
+    background: white;
+    border: 2px solid #3598dc !important;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 15px;
+    min-width: 200px;
+    text-align: center;
+}
+
+    .ui-draggable-dragging i.fa {
+        display: none;
+    }
+
+.required-item {
+    border: 1px solid red !important;
+    color: red !important;
+}
+
+.run-sheet-box .night-shift-box {
+    background: #404040 !important;
+    color: white !important;
+}
+
+.run-sheet-box .night-shift {
+    background: #404040 !important;
+    color: white !important;
+}
+
+    .run-sheet-box .night-shift .sorting_1 {
+        background: #404040 !important;
+    }
+
+    .run-sheet-box .night-shift .assigned-item-container .assigned-item-text,
+    .run-sheet-box .night-shift .team-leader-item .assigned-item-text,
+    .run-sheet-box .night-shift .team-member-item .assigned-item-text,
+    .run-sheet-box .night-shift .contractor-item .assigned-item-status,
+    .run-sheet-box .night-shift .assigned-asset-item .assigned-item-status {
+        color: #34495e !important;
+    }
+
+    .run-sheet-box .night-shift .assigned-item-container .assigned-item-icon,
+    .run-sheet-box .night-shift .team-leader-item .assigned-item-icon,
+    .run-sheet-box .night-shift .team-member-item .assigned-item-icon {
+        color: #34495e !important;
+    }
+
+    .run-sheet-box .night-shift .required-item .assigned-item-text {
+        color: red !important;
+    }
+
+    .run-sheet-box .night-shift .worklog-confirmed .assigned-item-text {
+        color: green !important;
+    }
+
+    .run-sheet-box .night-shift .worklog-declined .assigned-item-text {
+        color: red !important;
+    }
+
+.run-sheet-main .rs-content .rs-right-panel table .night-shift ul.g-items li {
+    margin: 4px 3px 0px -25px;
+}
+
+.div-shiftstatus-input {
+    display: block;
+    width: 100%;
+}
+
+.div-shiftstatus-input .div-shiftstatus-name{
+    display: inline-block;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+}
