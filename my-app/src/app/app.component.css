@@ -1,0 +1,6 @@
+.portlet{
+    padding: 10px 20px 15px;
+    border: 1px solid #e7ecf1 !important;
+    background: #fff;
+    overflow:hidden;
+}

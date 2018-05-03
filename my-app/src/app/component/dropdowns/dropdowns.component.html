@@ -1,359 +1,427 @@
-<div class="ng-list-cards">
-  <div class="row">
-    <div class="col-sm-2">
-      <perfect-scrollbar style="max-width: 600px; max-height: 800px ">
-        <div id="accordio">
-          <div class="card ng-card-item ng-btn-calendar">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <!-- <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <i class="fa fa-calendar"></i>
-                Cleander
-              </button> -->
-                <button class="btn btn-primary ng-header">
-                  <i class="fa fa-calendar"></i>
-                  Cleander
-                </button>
-              </h5>
-            </div>
-            <div id="collapseOne" class="ng-header-calendar" aria-labelledby="headingOne">
-              <div class="card-body ng-card-body">
-                <app-date-picker></app-date-picker>
-              </div>
-            </div>
-          </div>
-          <div class="card ng-card-item">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                  aria-controls="collapseTwo">
-                  Foremans
-                  <i class="fa fa-caret-right ng-header-icon"></i>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse toggle dispose hide " aria-labelledby="headingTwo">
-              <div class="card-body ng-card-body">
-                <div class="ng-search">
-                  <input type="text" class="form-control" [(ngModel)]='searchTeamLeader' placeholder="Search...">
-                </div>
-                <ul class="apis ng-items">
-                  <li class="ng-item" *ngFor="let api of teamLeadersView">
-                    <div dnd-draggable [dragEnabled]="true" [dragData]="api">
-                      {{api.name}}
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card ng-card-item">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                  aria-controls="collapseThree">
-                  Traffic Controllers
-                  <i class="fa fa-caret-right ng-header-icon"></i>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
-              <div class="card-body ng-card-body">
-                <div class="ng-search">
-                  <input type="text" class="form-control" [(ngModel)]="searchTeamMembers" placeholder="Search...">
-                </div>
-                <ul class="apis ng-items">
-                  <li class="ng-item" *ngFor="let api of teamMembersView">
-                    <div dnd-draggable [dragEnabled]="true" [dragData]="api">
-                      {{api.name}}
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card ng-card-item">
-            <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                  aria-controls="collapseOne">
-                  Contractors
-                  <i class="fa fa-caret-right ng-header-icon"></i>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
-              <div class="card-body ng-card-body">
-                <div class="ng-search">
-                  <input type="text" class="form-control" [(ngModel)]="searchconTractors" placeholder="Search...">
-                </div>
-                <ul class="apis ng-items">
-                  <li class="ng-item" *ngFor="let api of conTractorsView">
-                    <div dnd-draggable [dragEnabled]="true" [dragData]="api">
-                      {{api.name}}
-                    </div>
-
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card ng-card-item">
-            <div class="card-header" id="headingFive">
-              <h5 class="mb-0">
-                <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                  aria-controls="collapseFive">
-                  Owned Plant & Equipment
-                  <i class="fa fa-caret-right ng-header-icon"></i>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
-              <div class="card-body ng-card-body">
-                <div class="ng-search">
-                  <input type="text" class="form-control" [(ngModel)]='searchowendPlant' placeholder="Search...">
-                </div>
-                <ul class="apis ng-items">
-                  <li class="ng-item" *ngFor="let api of ownedPlantView">
-                    <div dnd-draggable [dragEnabled]="true" [dragData]="api">
-                      {{api.name}}
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card ng-card-item">
-            <div class="card-header" id="headingSix">
-              <h5 class="mb-0">
-                <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
-                  aria-controls="collapseSix">
-
-                  Hired Plant & Equipment
-
-                  <i class="fa fa-caret-right ng-header-icon"></i>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
-              <div class="card-body ng-card-body">
-                <div class="ng-search">
-                  <input type="text" class="form-control" [(ngModel)]='searchhiredPlant' placeholder="Search...">
-                </div>
-                <ul class="apis ng-items">
-                  <li class="ng-item" *ngFor="let api of hiredPlantView">
-                    <div dnd-draggable [dragEnabled]="true" [dragData]="api">
-                      {{api.name}}
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card ng-card-item">
-            <div class="card-header" id="headingSeven">
-              <h5 class="mb-0">
-                <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
-                  aria-controls="collapseSeven">
-                  Vehicles
-                  <i class="fa fa-caret-right ng-header-icon"></i>
-                </button>
-              </h5>
-            </div>
-
-            <div id="collapseSeven" class="collapse toggle" aria-labelledby="headingSeven">
-              <div class="card-body ng-card-body">
-                <div class="ng-search">
-                  <input type="text" class="form-control" [(ngModel)]='searchvehiCles' placeholder="Search...">
-                </div>
-                <ul class="apis ng-items">
-                  <li class="ng-item" *ngFor="let api of vehiClesView">
-                    <div dnd-draggable [dragEnabled]="true" [dragData]="api">
-                      {{api.name}}
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card ng-card-item">
-            <div class="card-header" id="headingEight">
-              <h5 class="mb-0">
-                <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
-                  aria-controls="collapseEight">
-                  Unavailable
-                  <i class="fa fa-caret-right ng-header-icon"></i>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseEight" class="collapse toggle" aria-labelledby="headingEight">
-              <div class="card-body ng-card-body">
-                <div class="ng-search">
-                  <input type="text" class="form-control" [(ngModel)]='searchunAvailables' placeholder="Search...">
-                </div>
-                <ul class="apis ng-items">
-                  <li class="ng-item" *ngFor="let api of unAvailablesView">
-                    {{api.name}}
-                  </li>
-                  <li class="ng-item">
-                    No data available
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card ng-card-item">
-            <div class="card-header" id="headingNine">
-              <h5 class="mb-0">
-                <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
-                  aria-controls="collapseNine">
-                  Employees On Leave
-                  <i class="fa fa-caret-right ng-header-icon"></i>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseNine" class="collapse" aria-labelledby="headingNine">
-              <div class="card-body ng-card-body">
-                <div class="ng-search">
-                  <input type="text" class="form-control" [(ngModel)]='searchonLeaveEmployees' placeholder="Search...">
-                </div>
-                <ul class="apis ng-items">
-                  <li class="ng-item" *ngFor="let api of onLeaveEmployeesView">
-                    {{api.name}}
-                  </li>
-                  <li class="ng-item">
-                    No data available
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </perfect-scrollbar>
+<div class="portlet-body">
+  <div class="run-sheet-main">
+    <div class="rs-header">
+      <a href="" class="bold">&lt;&lt;</a>
+      <span>11th of January</span>
+      <a href="" class="bold">&gt;&gt;</a>
     </div>
-    <table id="datatable">
-      <thead>
-        <tr role="row">
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
-              <div class="panel-heading"> Actions </div>
-              <div class="panel-body">
-
+    <div class="rs-content">
+      <div class="row">
+        <div class="col-md-2">
+          <perfect-scrollbar style="max-height:650px">
+            <!-- Calendar -->
+            <div class="card ng-card-item ng-btn-calendar">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary ng-header">
+                    <i class="fa fa-calendar"></i>
+                    Calendar
+                  </button>
+                </h5>
               </div>
-            </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
-              <div class="panel-heading"> Shift Number </div>
-              <div class="panel-body">
-              </div>
-            </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
-              <div class="panel-heading"> Start Time </div>
-              <div class="panel-body">
-                <div></div>
-              </div>
-            </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
-              <div class="panel-heading"> End Time </div>
-              <div class="panel-body">
-                <div> </div>
-              </div>
-            </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
-              <div class="panel-heading"> Client </div>
-              <div class="panel-body">
-                <div></div>
-              </div>
-            </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
-              <div class="panel-heading"> Location </div>
-              <div class="panel-body">
-                <div> </div>
-              </div>
-            </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataOwnedAssets($event)" (onDropSuccess)=" transferDataHiredSuccess($event)"
-              (onDropSuccess)="transferDataVehicleSuccess($event)">
-              <div class="panel-heading"> Assigned Assets</div>
-              <div class="panel-body">
-                <div>
-                  <ol>
-                    <li *ngIf="receivedDataOwned">{{receivedDataOwned}}</li>
-                    <li *ngFor="let data of dataHired"> {{data.name }}</li>
-                    <li *ngFor="let data of dataVehicle"> {{data.name }}</li>
-                  </ol>
+              <div id="collapseOne" class="ng-header-calendar" aria-labelledby="headingOne">
+                <div class="card-body ng-card-body">
+                  <app-date-picker></app-date-picker>
                 </div>
               </div>
             </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
-              <div class="panel-heading"> Foreman </div>
-              <div class="panel-body">
-                <div *ngIf="receivedDataForeman">1. {{receivedDataForeman}}</div>
+            <!-- Foremans -->
+            <div class="ng-card-item">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Foremans
+                    <i class="fa fa-caret-right ng-header-icon"></i>
+                  </button>
+                </h5>
               </div>
-            </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataControllersSuccess($event)">
-              <div class="panel-heading">Traffic Controllers </div>
-              <div class="panel-body">
-                <ol>
-                 <li *ngFor="let data of dataControllers"> {{data.name}} <i class="assigned-item-icon fa fa-trash"></i></li>
-                 
-                </ol>
-              </div>
-            </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataContractorSuccess($event)">
-              <div class="panel-heading">Contractors </div>
-              <div class="panel-body">
-                <div>
-                  <div *ngFor="let data of dataContractors; let i = index"> {{i + 1}}. {{data.name}}
-                    <br/> -Quantity:{{data.quantity}}</div>
+              <div id="collapseTwo" class="collapse toggle dispose hide " aria-labelledby="headingTwo">
+                <div class="card-body ng-card-body">
+                  <div class="ng-search">
+                    <input type="text" class="form-control" [(ngModel)]='searchTeamLeader' placeholder="Search...">
+                  </div>
+                  <ul class="apis ng-items">
+                    <li class="ng-item" *ngFor="let api of teamLeadersView">
+                      <div dnd-draggable [dragEnabled]="true" [dragData]="api">
+                        {{api.name}}
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </th>
-          <th>
-            <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
-              <div class="panel-heading"> Status </div>
-              <div class="panel-body">
-                <div> </div>
+            <!-- Traffic Controllers -->
+            <div class="ng-card-item">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Traffic Controllers
+                    <i class="fa fa-caret-right ng-header-icon"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                <div class="card-body ng-card-body">
+                  <div class="ng-search">
+                    <input type="text" class="form-control" [(ngModel)]="searchTeamMembers" placeholder="Search...">
+                  </div>
+                  <ul class="apis ng-items">
+                    <li class="ng-item" *ngFor="let api of teamMembersView">
+                      <div dnd-draggable [dragEnabled]="true" [dragData]="api">
+                        {{api.name}}
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr role="row">
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+            <!-- Contractors -->
+            <div class="card ng-card-item">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    Contractors
+                    <i class="fa fa-caret-right ng-header-icon"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                <div class="card-body ng-card-body">
+                  <div class="ng-search">
+                    <input type="text" class="form-control" [(ngModel)]="searchconTractors" placeholder="Search...">
+                  </div>
+                  <ul class="apis ng-items">
+                    <li class="ng-item" *ngFor="let api of conTractorsView">
+                      <div dnd-draggable [dragEnabled]="true" [dragData]="api">
+                        {{api.name}}
+                      </div>
 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Owned Plant & Equipment -->
+            <div class="card ng-card-item">
+              <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                    aria-controls="collapseFive">
+                    Owned Plant & Equipment
+                    <i class="fa fa-caret-right ng-header-icon"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                <div class="card-body ng-card-body">
+                  <div class="ng-search">
+                    <input type="text" class="form-control" [(ngModel)]='searchowendPlant' placeholder="Search...">
+                  </div>
+                  <ul class="apis ng-items">
+                    <li class="ng-item" *ngFor="let api of ownedPlantView">
+                      <div dnd-draggable [dragEnabled]="true" [dragData]="api">
+                        {{api.name}}
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Hired Plant & Equipment -->
+            <div class="card ng-card-item">
+              <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                    aria-controls="collapseSix">
+
+                    Hired Plant & Equipment
+
+                    <i class="fa fa-caret-right ng-header-icon"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                <div class="card-body ng-card-body">
+                  <div class="ng-search">
+                    <input type="text" class="form-control" [(ngModel)]='searchhiredPlant' placeholder="Search...">
+                  </div>
+                  <ul class="apis ng-items">
+                    <li class="ng-item" *ngFor="let api of hiredPlantView">
+                      <div dnd-draggable [dragEnabled]="true" [dragData]="api">
+                        {{api.name}}
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vehicles -->
+            <div class="card ng-card-item">
+              <div class="card-header" id="headingSeven">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+                    aria-controls="collapseSeven">
+                    Vehicles
+                    <i class="fa fa-caret-right ng-header-icon"></i>
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseSeven" class="collapse toggle" aria-labelledby="headingSeven">
+                <div class="card-body ng-card-body">
+                  <div class="ng-search">
+                    <input type="text" class="form-control" [(ngModel)]='searchvehiCles' placeholder="Search...">
+                  </div>
+                  <ul class="apis ng-items">
+                    <li class="ng-item" *ngFor="let api of vehiClesView">
+                      <div dnd-draggable [dragEnabled]="true" [dragData]="api">
+                        {{api.name}}
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unavailable -->
+            <div class="card ng-card-item">
+              <div class="card-header" id="headingEight">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+                    aria-controls="collapseEight">
+                    Unavailable
+                    <i class="fa fa-caret-right ng-header-icon"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseEight" class="collapse toggle" aria-labelledby="headingEight">
+                <div class="card-body ng-card-body">
+                  <div class="ng-search">
+                    <input type="text" class="form-control" [(ngModel)]='searchunAvailables' placeholder="Search...">
+                  </div>
+                  <ul class="apis ng-items">
+                    <li class="ng-item" *ngFor="let api of unAvailablesView">
+                      {{api.name}}
+                    </li>
+                    <li class="ng-item">
+                      No data available
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Employees On Leave -->
+            <div class="card ng-card-item">
+              <div class="card-header" id="headingNine">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
+                    aria-controls="collapseNine">
+                    Employees On Leave
+                    <i class="fa fa-caret-right ng-header-icon"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseNine" class="collapse" aria-labelledby="headingNine">
+                <div class="card-body ng-card-body">
+                  <div class="ng-search">
+                    <input type="text" class="form-control" [(ngModel)]='searchonLeaveEmployees' placeholder="Search...">
+                  </div>
+                  <ul class="apis ng-items">
+                    <li class="ng-item" *ngFor="let api of onLeaveEmployeesView">
+                      {{api.name}}
+                    </li>
+                    <li class="ng-item">
+                      No data available
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </perfect-scrollbar>
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <div class="dashboard-stat dashboard-stat-v2 red">
+                <div class="visual">
+                  <i class="fa fa-bar-chart-o"></i>
+                </div>
+                <div class="details team-leader-details">
+                  <div class="number">
+                    <span data-counter="counterup" data-value="0">0</span>
+                  </div>
+                  <div class="desc"> Team Leaders Available </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <a class="dashboard-stat dashboard-stat-v2 green" href="#">
+                <div class="visual">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+                <div class="details team-member-details">
+                  <div class="number">
+                    <span data-counter="counterup" data-value="0">0</span>
+                  </div>
+                  <div class="desc"> Team Members Available </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <a class="dashboard-stat dashboard-stat-v2 purple" href="#">
+                <div class="visual">
+                  <i class="fa fa-globe"></i>
+                </div>
+                <div class="details shift-created-details">
+                  <div class="number">
+                    <span data-counter="counterup" data-value="0">0</span>
+                  </div>
+                  <div class="desc"> Shifts Created Today </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-striped table-bordered table-hover table-checkable order-column dataTable no-footer">
+                <thead>
+                  <tr>
+                    <th class="action text-center sorting_disabled">
+                      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
+                        <div class=""> Actions </div>
+                        <div class="panel-body">
+                        </div>
+                      </div>
+                    </th>
+                    <th class="text-center shift-number sorting">
+                      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
+                        <div class=""> Shift Number </div>
+                        <div class="panel-body">
+                        </div>
+                      </div>
+                    </th>
+                    <th class="text-center time-range sorting_asc">
+                      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
+                        <div class=""> Start Time </div>
+                        <div class="panel-body">
+                          <div></div>
+                        </div>
+                      </div>
+                    </th>
+                    <th class="text-center time-range sorting">
+                      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
+                        <div class=""> End Time </div>
+                        <div class="panel-body">
+                          <div> </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th class="text-center client sorting_disabled">
+                      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
+                        <div class=""> Client </div>
+                        <div class="panel-body">
+                          <div></div>
+                        </div>
+                      </div>
+                    </th>
+                    <th class="text-center location sorting_disabled">
+                      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
+                        <div class=""> Location </div>
+                        <div class="panel-body">
+                          <div> </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th class="text-center assigned-assets sorting_disabled">
+                      <div class="panel panel-info">
+                        <div class=""> Assigned Assets</div>
+
+                      </div>
+                    </th>
+                    <th class="text-center team-leader sorting_disabled">
+                      <div class="panel panel-info">
+                        <div class=""> Foreman </div>
+                      
+                      </div>
+                    </th>
+                    <th class="text-center team-member sorting_disabled">
+                      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataControllersSuccess($event)">
+                        <div class="">Traffic Controllers </div>
+                        <div class="panel-body">
+                          <ol>
+                            <li *ngFor="let data of dataControllers"> {{data.name}}
+                              <i class="assigned-item-icon fa fa-trash"></i>
+                            </li>
+
+                          </ol>
+                        </div>
+                      </div>
+                    </th>
+                    <th class="text-center contractor sorting_disabled">
+                      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataContractorSuccess($event)">
+                        <div class="">Contractors </div>
+                        <div class="panel-body">
+                          <div>
+                            <div *ngFor="let data of dataContractors; let i = index"> {{i + 1}}. {{data.name}}
+                              <br/> -Quantity:{{data.quantity}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th class="text-center status sorting_disabled">
+                      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataForemanSuccess($event)">
+                        <div class=""> Status </div>
+                        <div class="panel-body">
+                          <div> </div>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr role="row">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td dnd-droppable (onDropSuccess)="transferDataOwnedAssets($event)" (onDropSuccess)=" transferDataHiredSuccess($event)" (onDropSuccess)="transferDataVehicleSuccess($event)">
+                      <div class="panel-body">
+                        <div class="panel panel-info">
+                          <ol>
+                            <li *ngIf="receivedDataOwned">{{receivedDataOwned}}</li>
+                            <li *ngFor="let data of dataHired" class="ng-border"> {{data.name }}</li>
+                            <li *ngFor="let data of dataVehicle" class="ng-border"> {{data.name }}</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </td>
+                    <td dnd-droppable (onDropSuccess)="transferDataForemanSuccess($event)">
+                      <div class="panel-body">
+                        <div class="panel panel-info">
+                        <div *ngIf="receivedDataForeman" class="ng-border">1. {{receivedDataForeman}}</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
   </div>
 </div>

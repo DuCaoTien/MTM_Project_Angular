@@ -1,0 +1,28 @@
+.portlet-title{
+    border-bottom: 1px solid #eef1f5;
+    overflow:hidden;
+}
+
+.portlet-title .caption{
+    padding: 10px 0;
+    display: inline-block;
+    float: left;
+}
+.font-blue {
+    color: #3598dc !important;
+}
+.bold {
+    font-weight: bold !important;
+}
+.uppercase {
+    text-transform: uppercase !important;
+}
+.caption i,span{
+    font-size: 14px;
+}
+
+.portlet-title .actions{
+    display: inline-block;
+    float: right;
+    margin: 35px 0 15px 0;
+}

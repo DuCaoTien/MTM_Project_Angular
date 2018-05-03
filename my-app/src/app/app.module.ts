@@ -14,9 +14,11 @@ import { NgSelectModule, NG_SELECT_DEFAULT_CONFIG } from '@ng-select/ng-select';
 import { AppComponent } from './app.component';
 import { DropdownsComponent } from './component/dropdowns/dropdowns.component';
 import { DatePickerComponent } from './component/date-picker/date-picker.component';
+import { HeaderComponent } from './component/header/header.component';
 import { HttpModule } from '@angular/http';
 import { DndModule } from 'ng2-dnd';
 import * as _ from 'lodash';
+
 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -28,6 +30,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     AppComponent,
     DropdownsComponent,
     DatePickerComponent,
+    HeaderComponent,
 
 
   ],
