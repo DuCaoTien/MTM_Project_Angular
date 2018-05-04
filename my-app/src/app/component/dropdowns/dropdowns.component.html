@@ -10,15 +10,13 @@
         <div class="col-md-2">
           <perfect-scrollbar style="max-height:650px">
             <!-- Calendar -->
-            <div class="card ng-card-item ng-btn-calendar">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn btn-primary ng-header">
-                    <i class="fa fa-calendar"></i>
-                    Calendar
-                  </button>
-                </h5>
-              </div>
+            <div class="ng-card-item ng-btn-calendar">
+              
+              <button class="btn ng-header">
+                <i class="fa fa-calendar"></i>
+                Calendar
+              </button>
+                
               <div id="collapseOne" class="ng-header-calendar" aria-labelledby="headingOne">
                 <div class="card-body ng-card-body">
                   <app-date-picker></app-date-picker>
@@ -27,21 +25,18 @@
             </div>
             <!-- Foremans -->
             <div class="ng-card-item">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">
-                    Foremans
-                    <i class="fa fa-caret-right ng-header-icon"></i>
-                  </button>
-                </h5>
-              </div>
+              <button class="btn collapsed ng-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                  Foremans
+                <i class="fa fa-caret-right ng-header-icon"></i>
+              </button>
+             
               <div id="collapseTwo" class="collapse toggle dispose hide " aria-labelledby="headingTwo">
-                <div class="card-body ng-card-body">
+                <div class="ng-card-body">
                   <div class="ng-search">
                     <input type="text" class="form-control" [(ngModel)]='searchTeamLeader' placeholder="Search...">
                   </div>
-                  <ul class="apis ng-items">
+                  <ul class="ng-items">
                     <li class="ng-item" *ngFor="let api of teamLeadersView">
                       <div dnd-draggable [dragEnabled]="true" [dragData]="api">
                         {{api.name}}
@@ -53,21 +48,18 @@
             </div>
             <!-- Traffic Controllers -->
             <div class="ng-card-item">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">
-                    Traffic Controllers
-                    <i class="fa fa-caret-right ng-header-icon"></i>
-                  </button>
-                </h5>
-              </div>
+              <button class="btn collapsed ng-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                Traffic Controllers
+                <i class="fa fa-caret-right ng-header-icon"></i>
+              </button>
+                
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
-                <div class="card-body ng-card-body">
+                <div class="ng-card-body">
                   <div class="ng-search">
                     <input type="text" class="form-control" [(ngModel)]="searchTeamMembers" placeholder="Search...">
                   </div>
-                  <ul class="apis ng-items">
+                  <ul class="ng-items">
                     <li class="ng-item" *ngFor="let api of teamMembersView">
                       <div dnd-draggable [dragEnabled]="true" [dragData]="api">
                         {{api.name}}
@@ -78,22 +70,20 @@
               </div>
             </div>
             <!-- Contractors -->
-            <div class="card ng-card-item">
-              <div class="card-header" id="headingFour">
-                <h5 class="mb-0">
-                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                    aria-controls="collapseOne">
-                    Contractors
-                    <i class="fa fa-caret-right ng-header-icon"></i>
-                  </button>
-                </h5>
-              </div>
+            <div class="ng-card-item">
+              
+              <button class="btn collapsed ng-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseOne">
+                Contractors
+                <i class="fa fa-caret-right ng-header-icon"></i>
+              </button>
+                
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
-                <div class="card-body ng-card-body">
+                <div class="ng-card-body">
                   <div class="ng-search">
                     <input type="text" class="form-control" [(ngModel)]="searchconTractors" placeholder="Search...">
                   </div>
-                  <ul class="apis ng-items">
+                  <ul class="ng-items">
                     <li class="ng-item" *ngFor="let api of conTractorsView">
                       <div dnd-draggable [dragEnabled]="true" [dragData]="api">
                         {{api.name}}
@@ -105,22 +95,20 @@
               </div>
             </div>
             <!-- Owned Plant & Equipment -->
-            <div class="card ng-card-item">
-              <div class="card-header" id="headingFive">
-                <h5 class="mb-0">
-                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                    aria-controls="collapseFive">
-                    Owned Plant & Equipment
-                    <i class="fa fa-caret-right ng-header-icon"></i>
-                  </button>
-                </h5>
-              </div>
+            <div class="ng-card-item">
+              
+              <button class="btn collapsed ng-header" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                aria-controls="collapseFive">
+                Owned Plant & Equipment
+                <i class="fa fa-caret-right ng-header-icon"></i>
+              </button>
+                
               <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
-                <div class="card-body ng-card-body">
+                <div class="ng-card-body">
                   <div class="ng-search">
                     <input type="text" class="form-control" [(ngModel)]='searchowendPlant' placeholder="Search...">
                   </div>
-                  <ul class="apis ng-items">
+                  <ul class="ng-items">
                     <li class="ng-item" *ngFor="let api of ownedPlantView">
                       <div dnd-draggable [dragEnabled]="true" [dragData]="api">
                         {{api.name}}
@@ -131,24 +119,22 @@
               </div>
             </div>
             <!-- Hired Plant & Equipment -->
-            <div class="card ng-card-item">
-              <div class="card-header" id="headingSix">
-                <h5 class="mb-0">
-                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+            <div class="ng-card-item">
+              
+                  <button class="btn collapsed ng-header" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
                     aria-controls="collapseSix">
 
                     Hired Plant & Equipment
 
                     <i class="fa fa-caret-right ng-header-icon"></i>
                   </button>
-                </h5>
-              </div>
+                
               <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
-                <div class="card-body ng-card-body">
+                <div class="ng-card-body">
                   <div class="ng-search">
                     <input type="text" class="form-control" [(ngModel)]='searchhiredPlant' placeholder="Search...">
                   </div>
-                  <ul class="apis ng-items">
+                  <ul class="ng-items">
                     <li class="ng-item" *ngFor="let api of hiredPlantView">
                       <div dnd-draggable [dragEnabled]="true" [dragData]="api">
                         {{api.name}}
@@ -160,23 +146,21 @@
             </div>
 
             <!-- Vehicles -->
-            <div class="card ng-card-item">
-              <div class="card-header" id="headingSeven">
-                <h5 class="mb-0">
+            <div class="ng-card-item">
+              
                   <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
                     aria-controls="collapseSeven">
                     Vehicles
                     <i class="fa fa-caret-right ng-header-icon"></i>
                   </button>
-                </h5>
-              </div>
+              
 
               <div id="collapseSeven" class="collapse toggle" aria-labelledby="headingSeven">
-                <div class="card-body ng-card-body">
+                <div class="ng-card-body">
                   <div class="ng-search">
                     <input type="text" class="form-control" [(ngModel)]='searchvehiCles' placeholder="Search...">
                   </div>
-                  <ul class="apis ng-items">
+                  <ul class="ng-items">
                     <li class="ng-item" *ngFor="let api of vehiClesView">
                       <div dnd-draggable [dragEnabled]="true" [dragData]="api">
                         {{api.name}}
@@ -188,22 +172,20 @@
             </div>
 
             <!-- Unavailable -->
-            <div class="card ng-card-item">
-              <div class="card-header" id="headingEight">
-                <h5 class="mb-0">
-                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+            <div class="ng-card-item">
+              
+                  <button class="btn collapsed ng-header" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
                     aria-controls="collapseEight">
                     Unavailable
                     <i class="fa fa-caret-right ng-header-icon"></i>
                   </button>
-                </h5>
-              </div>
+                
               <div id="collapseEight" class="collapse toggle" aria-labelledby="headingEight">
-                <div class="card-body ng-card-body">
+                <div class="ng-card-body">
                   <div class="ng-search">
                     <input type="text" class="form-control" [(ngModel)]='searchunAvailables' placeholder="Search...">
                   </div>
-                  <ul class="apis ng-items">
+                  <ul class="ng-items">
                     <li class="ng-item" *ngFor="let api of unAvailablesView">
                       {{api.name}}
                     </li>
@@ -215,22 +197,20 @@
               </div>
             </div>
             <!-- Employees On Leave -->
-            <div class="card ng-card-item">
-              <div class="card-header" id="headingNine">
-                <h5 class="mb-0">
-                  <button class="btn btn-primary collapsed ng-header" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
+            <div class="ng-card-item">
+              
+                  <button class="btn collapsed ng-header" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
                     aria-controls="collapseNine">
                     Employees On Leave
                     <i class="fa fa-caret-right ng-header-icon"></i>
                   </button>
-                </h5>
-              </div>
+                
               <div id="collapseNine" class="collapse" aria-labelledby="headingNine">
-                <div class="card-body ng-card-body">
+                <div class="ng-card-body">
                   <div class="ng-search">
                     <input type="text" class="form-control" [(ngModel)]='searchonLeaveEmployees' placeholder="Search...">
                   </div>
-                  <ul class="apis ng-items">
+                  <ul class="ng-items">
                     <li class="ng-item" *ngFor="let api of onLeaveEmployeesView">
                       {{api.name}}
                     </li>
@@ -383,6 +363,7 @@
                     </th>
                   </tr>
                 </thead>
+
                 <tbody>
                   <tr role="row">
                     <td></td>
@@ -392,21 +373,17 @@
                     <td></td>
                     <td></td>
                     <td dnd-droppable (onDropSuccess)="transferDataOwnedAssets($event)" (onDropSuccess)=" transferDataHiredSuccess($event)" (onDropSuccess)="transferDataVehicleSuccess($event)">
-                      <div class="panel-body">
-                        <div class="panel panel-info">
-                          <ol>
-                            <li *ngIf="receivedDataOwned">{{receivedDataOwned}}</li>
-                            <li *ngFor="let data of dataHired" class="ng-border"> {{data.name }}</li>
-                            <li *ngFor="let data of dataVehicle" class="ng-border"> {{data.name }}</li>
-                          </ol>
-                        </div>
+                      <div>
+                        <div *ngIf="receivedDataOwned" class="ng-border">{{receivedDataOwned}} <i class="fa fa-trash-o"></i></div>
+                        <div *ngFor="let data of dataHired" class="ng-border"> {{data.name }}<i class="fa fa-trash-o"></i></div>
+                        <div *ngFor="let data of dataVehicle" class="ng-border"> {{data.name }}<i class="fa fa-trash-o"></i></div>
                       </div>
                     </td>
+                    <!-- Column Foremans -->
                     <td dnd-droppable (onDropSuccess)="transferDataForemanSuccess($event)">
-                      <div class="panel-body">
-                        <div class="panel panel-info">
-                        <div *ngIf="receivedDataForeman" class="ng-border">1. {{receivedDataForeman}}</div>
-                        </div>
+                      <div *ngIf="receivedDataForeman" class="ng-border">
+                        {{receivedDataForeman}}
+                        <i class="fa fa-trash-o"></i>
                       </div>
                     </td>
                     <td></td>
@@ -417,10 +394,7 @@
               </table>
             </div>
           </div>
-
         </div>
-
-
       </div>
     </div>
   </div>

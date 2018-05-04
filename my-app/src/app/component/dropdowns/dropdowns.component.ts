@@ -93,12 +93,14 @@ export class DropdownsComponent implements OnInit {
     this.apiDocumentService.getApi().subscribe((response: any) => {
 
       this.teamLeaders = response['teamLeaders'];
+      console.log(this.teamLeaders);
       this.teamLeaders.forEach(response => {
         response.Type = "TeamLeaders"
       });
    
 
       this.teamMembers = response['teamMembers'];
+      console.log(this.teamMembers);
       this.teamMembers.forEach(response => {
         response.Type = 'TeamMembers'
       });

@@ -30,70 +30,18 @@ body{
     margin-bottom: 15px;
 }
 
-/* .ng-list-cards {
-    padding: 12px 20px 15px 20px;
-} */
-
-.ng-header{
-    background-color: #3598dc;
-    color: white;
-    padding: 5px 0;
-    height: 35px;
-    vertical-align: middle;
-    line-height: 25px;
-    border-bottom: 1px solid white;
-}
 .ng-content{
     border: 1px solid #c2cad8;
 }
-.txtSearchItem {
-    height: 30px !important;
-    min-height: 20px !important;
-    width: 100%;
-    padding-left: 5px;
-}
-
-.ng-search{
-    margin: 5px 2%;
-    width: 96%;
-}
-.control-label{
-    font-size: 13px;
-    color: #888888;
-    margin-left: 10px;
-}
-span{
-    margin-left: 10px;
-}
-ul {
-    list-style-type: none;
-}
-
-/* .ng_sm_1{
-    padding-left: 0px;
-    padding-right: 0px;
-    max-width: 9%;
-}
-.ng_sm_1_1{
-    padding-left: 0px;
-    padding-right: 0px;
-    max-width: 7%;
-}
-.ng_sm_1_2{
-    padding-left: 0px;
-    padding-right: 0px;
-    max-width: 6%;
-} */
 .ng-header {
-    background-color: #3598dc;
+    background: #3598dc !important;
     color: white;
     width: 100%;
     text-align: left;
-    padding: 5px 10px;
-    height: 35px;
     vertical-align: middle;
-    line-height: 25px;
-    border-bottom: 1px solid white;   
+    font-size: 12px !important;
+    font-weight: 600;
+    height: 100%;
 }
 .ng-btn-calendar {
     position: relative;
@@ -121,47 +69,39 @@ ul {
 
 .ng-header-icon {
     float: right;
-    line-height: 20px;
+    line-height: 18px;
     transition: transform 0.5s;
 }
-.ng-header-icon::before {
-    font-size: 20px;
-}
+
 .ng-header[aria-expanded=true] .ng-header-icon {
     transform: rotate(90deg);
 }
 
 /* Card  item*/
 .ng-card-item {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
-.ng-card-item .card-header {
- background-color: #fff;
- border-bottom: transparent;
- padding: 0;
- 
-}
+
 
 /* Card body */
 .ng-card-body {
     border: 1px solid #c2cad8;
-    /* margin-top: -15px; */
-    padding: 0;
+    margin-top: 2px;
+}
+.ng-search{
+    margin: 5px;
 }
 /* List items */
 .ng-items {
-    padding: 0;
+    padding-left: 0;
 }
 
 .ng-item {
-    padding: 5px;
-    border-top: 1px solid #e2e2e2;
-    margin: 0;
+    padding-left: 5px;
+    border: 1px solid #e2e2e2;
+    margin: 5px;
     background: #fbfafa;
     color: #888888;
-}
-.ng-item:last-child {
-    border-bottom: 1px solid #e2e2e2;
 }
 
 
@@ -207,7 +147,12 @@ table th {
 }
 
 .ng-border{
+    margin-top: 5px;
+    padding-left: 3px;
     border: 1px solid
+}
+.ng-border i{
+    float: right;
 }
 
 
